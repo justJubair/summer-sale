@@ -58,7 +58,7 @@
                         <!-- cards container -->
                         <div class="grid grid-cols-1 gap-4 px-4 md:grid-cols-2 lg:grid-cols-3">
                             <!-- card one -->
-                            <div>
+                            <div onclick="addCardToLog(this)" class="hover:cursor-pointer">
                                 <div class="card bg-base-100 shadow-xl">
                                     <figure class="bg-gray-200 p-4 m-4"><img src="./images/prod1.png" alt="Shoes" /></figure>
                                     <div class="text-center">
@@ -71,13 +71,13 @@
                                           </div>
                                     </div>
                                     <div class="text-center mt-2 p-4">
-                                      <h2 class="text-xl font-bold">K. Accessories</h2>
+                                      <h2 id="accessoriesOne" class="text-xl font-bold">K. Accessories</h2>
                                       <p class="mt-2 text-lg text-gray-500">39.00 TK</p>
                                     </div>
                                   </div>
                             </div>
                             <!-- card two -->
-                            <div>
+                            <div onclick="addCardToLog(this)" class="hover:cursor-pointer">
                                 <div class="card bg-base-100 shadow-xl">
                                     <figure class="bg-gray-200 p-4 m-4"><img src="./images/prod2.png" alt="Shoes" /></figure>
                                     <div class="text-center">
@@ -90,13 +90,13 @@
                                           </div>
                                     </div>
                                     <div class=" text-center mt-2 p-4">
-                                      <h2 class="text-xl font-bold">K. Accessories</h2>
+                                      <h2 id="accessoriesTwo" class="text-xl font-bold">K. Accessories</h2>
                                       <p class="mt-2 text-lg text-gray-500">25.00 TK</p>
                                     </div>
                                   </div>
                             </div>
                             <!-- card three -->
-                            <div>
+                            <div onclick="addCardToLog(this)" class="hover:cursor-pointer">
                                 <div class="card bg-base-100 shadow-xl">
                                     <figure class="bg-gray-200 p-4 m-4"><img src="./images/prod3.png" alt="Shoes" /></figure>
                                     <div class="text-center">
@@ -109,7 +109,7 @@
                                           </div>
                                     </div>
                                     <div class=" text-center mt-2 p-4">
-                                      <h2 class="text-xl font-bold">Home Cooker</h2>
+                                      <h2 id="home-cooker" class="text-xl font-bold">Home Cooker</h2>
                                       <p class="mt-2 text-lg text-gray-500">49.00 TK</p>
                                     </div>
                                   </div>
@@ -121,8 +121,8 @@
                         <h2 class="text-3xl font-bold ml-4 text-center md:text-start md:my-4">Sportswear</h2>
                         <!-- cards container -->
                         <div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
-                            <!-- card one -->
-                            <div>
+                            <!-- card four -->
+                            <div onclick="addCardToLog(this)" class="hover:cursor-pointer">
                                 <div class="card bg-base-100 shadow-xl">
                                     <figure class="bg-gray-200 p-4 m-4"><img src="./images/prod4.png" alt="Shoes" /></figure>
                                     <div class="text-center">
@@ -135,13 +135,13 @@
                                           </div>
                                     </div>
                                     <div class=" text-center mt-2 p-4">
-                                      <h2 class="text-xl font-bold">Sports Back Cap</h2>
+                                      <h2 id="back-cap" class="text-xl font-bold">Sports Back Cap</h2>
                                       <p class="mt-2 text-lg text-gray-500">49.00 TK</p>
                                     </div>
                                   </div>
                             </div>
-                            <!-- card two -->
-                            <div>
+                            <!-- card five -->
+                            <div onclick="addCardToLog(this)" class="hover:cursor-pointer">
                                 <div class="card bg-base-100 shadow-xl">
                                     <figure class="bg-gray-200 p-4 m-4"><img src="./images/prod5.png" alt="Shoes" /></figure>
                                     <div class="text-center">
@@ -154,13 +154,13 @@
                                           </div>
                                     </div>
                                     <div class=" text-center mt-2 p-4">
-                                      <h2 class="text-xl font-bold">Full Jersey Set</h2>
+                                      <h2 id="jersey-set" class="text-xl font-bold">Full Jersey Set</h2>
                                       <p class="mt-2 text-lg text-gray-500">69.00 TK</p>
                                     </div>
                                   </div>
                             </div>
-                            <!-- card three -->
-                            <div>
+                            <!-- card six -->
+                            <div onclick="addCardToLog(this)" class="hover:cursor-pointer">
                                 <div class="card bg-base-100 shadow-xl">
                                     <figure class="bg-gray-200 p-4 m-4"><img src="./images/prod6.png" alt="Shoes" /></figure>
                                     <div class="text-center">
@@ -173,7 +173,7 @@
                                           </div>
                                     </div>
                                     <div class=" text-center mt-2 p-4">
-                                      <h2 class="text-xl font-bold">Home Cooker</h2>
+                                      <h2 id="cates" class="text-xl font-bold">Sports cates</h2>
                                       <p class="mt-2 text-lg text-gray-500">159.00 TK</p>
                                     </div>
                                   </div>
@@ -185,8 +185,8 @@
                         <h2 class="text-3xl font-bold ml-4 text-center md:text-start md:my-4">Furniture</h2>
                         <!-- cards container -->
                         <div class="grid grid-cols-1 gap-4 p-4 md:grid-cols-2 lg:grid-cols-3">
-                            <!-- card one -->
-                            <div>
+                            <!-- card seven -->
+                            <div onclick="addCardToLog(this)" class="hover:cursor-pointer">
                                 <div class="card bg-base-100 shadow-xl">
                                     <figure class="bg-gray-200 p-4 m-4"><img src="./images/prod7.png" alt="Shoes" /></figure>
                                     <div class="text-center">
@@ -199,13 +199,13 @@
                                           </div>
                                     </div>
                                     <div class=" text-center mt-2 p-4">
-                                      <h2 class="text-xl font-bold">Single Relax Chair</h2>
+                                      <h2 id="chair" class="text-xl font-bold">Single Relax Chair</h2>
                                       <p class="mt-2 text-lg text-gray-500">185.00 TK</p>
                                     </div>
                                   </div>
                             </div>
-                            <!-- card two -->
-                            <div>
+                            <!-- card eight -->
+                            <div onclick="addCardToLog(this)" class="hover:cursor-pointer">
                                 <div class="card bg-base-100 shadow-xl">
                                     <figure class="bg-gray-200 p-4 m-4"><img src="./images/prod8.png" alt="Shoes" /></figure>
                                     <div class="text-center">
@@ -218,13 +218,13 @@
                                           </div>
                                     </div>
                                     <div class=" text-center mt-2 p-4">
-                                      <h2 class="text-xl font-bold">Children play</h2>
+                                      <h2 id="play" class="text-xl font-bold">Children play</h2>
                                       <p class="mt-2 text-lg text-gray-500">299.00 TK</p>
                                     </div>
                                   </div>
                             </div>
-                            <!-- card three -->
-                            <div>
+                            <!-- card nine -->
+                            <div onclick="addCardToLog(this)" class="hover:cursor-pointer">
                                 <div class="card bg-base-100 shadow-xl">
                                     <figure class="bg-gray-200 p-4 m-4"><img src="./images/prod9.png" alt="Shoes" /></figure>
                                     <div class="text-center">
@@ -237,7 +237,7 @@
                                           </div>
                                     </div>
                                     <div class=" text-center mt-2 p-4">
-                                      <h2 class="text-xl font-bold">Flexible Sofa</h2>
+                                      <h2 id="sofa" class="text-xl font-bold">Flexible Sofa</h2>
                                       <p class="mt-2 text-lg text-gray-500">339.00 TK</p>
                                     </div>
                                   </div>
@@ -251,17 +251,15 @@
                     <div class="bg-white p-4 rounded-lg">
                         <h3 class="text-xl font-semibold mb-2">Have coupon?</h3>
                         <div class="flex items-center">
-                            <input type="text" id="" class="border border-r mr-0 border-r-white border-gray-400 h-9">
-                            <button class="btn bg-[#E527B2] ml-0 hover:bg-pink-700 text-white px-5">Apply</button>
+                            <input type="text" id="coupon-input" class="border border-r mr-0 border-r-white border-gray-400 h-9">
+                            <button id="apply-btn" class="btn bg-[#E527B2] ml-0 hover:bg-pink-700 text-white px-5" disabled>Apply</button>
                         </div>
                     </div>
                     <!-- list items and checkout price section -->
                     <div class="bg-white mt-5 p-4">
                         <!-- list items -->
-                        <div id="list-item" class="my-4 font-semibold text-xl">
-                            <p>1. Home decor</p>
-                            <p>1. Home decor</p>
-                            <p>1. Home decor</p>
+                        <div id="list-item" class="my-4 font-semibold text-lg">
+                            <h3 class="text-xl text-[#E527B2] text-center mb-4 underline">List of Selected Items</h3>
                         </div>
                         <hr>
                         <!-- total price section -->
@@ -271,7 +269,7 @@
                             <h3 class="text-xl font-semibold">Total: <span id="total" class="text-gray-400">00 TK</span></h3>
                         </div>
                         <hr>
-                        <button class="btn bg-[#E527B2] w-full text-white hover:bg-pink-700 mt-5">Make Purchase</button>
+                        <button id="purchase-btn" class="btn bg-[#E527B2] w-full text-white hover:bg-pink-700 mt-5" disabled>Make Purchase</button>
                     </div>
                 </div>
             </div>
