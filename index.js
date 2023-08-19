@@ -36,7 +36,7 @@ function addCardToLog(target) {
 function applyCoupon() {
       const couponInput = document.getElementById('coupon-input').value;
       if(couponInput !== 'SELL200' || couponInput === '') {
-            return alert('Invalid coupon')
+            return alert('Invalid coupon');
       }
       const discountElement = document.getElementById('discount-price'),
             totalPrice = parseFloat(document.getElementById('total-price').innerText),
