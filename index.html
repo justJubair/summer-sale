@@ -10,11 +10,39 @@
     <!-- tailwindcss and daisyUI cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.1/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind customization script file -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+                fontFamily: {
+                    'workSans': ['Work Sans', 'sans-serif']
+                }
+            }
+          }
+        }
+      </script>
     <title>Summer Sale</title>
 </head>
 <body class="workSans">
     <header>
-        <h1 class="text-2xl">hello</h1>
+        <!-- banner section -->
+        <section class="flex flex-col-reverse items-center justify-center gap-7 bg-[#F9F6E2] p-4 lg:flex-row">
+            <!-- text content section -->
+            <div class="text-center">
+                <h3 class="uppercase  font-semibold text-2xl md:text-3xl">---sale fever---</h3>
+                <h1 class=" font-black my-5 text-3xl md:text-5xl">Purchase TK 200 or <br> above & get <span class="text-[#E527B2]">20% off</span></h1>
+                <div class="flex items-center justify-center gap-4 mt-8">
+                    <p class="font-semibold">Use Promo Code</p>
+                    <button class="btn px-7 bg-[#E527B2] text-white hover:bg-pink-600 md:text-lg">sell200</button>
+                </div>
+            </div>
+            <!-- image section -->
+            <div>
+                <img src="images/Summer 1.png" class=" lg:w-[500px]" alt="">
+            </div>
+        </section>
+        <!-- banner section ends -->
     </header>
     <!-- js file -->
     <script src="index.js"></script>
