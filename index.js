@@ -62,11 +62,15 @@ function resetEverything() {
             totalPrice = document.getElementById('total-price'),
             discountPrice = document.getElementById('discount-price'),
             priceAfterDiscount = document.getElementById('total'),
-            couponInput = document.getElementById('coupon-input');
+            couponInput = document.getElementById('coupon-input'),
+            applyBtn = document.getElementById('apply-btn'),
+            purchaseBtn = document.getElementById('purchase-btn');
       listItems.innerHTML = '';
       totalPrice.innerText = '00 TK';
       discountPrice.innerText = '00 TK';
       priceAfterDiscount.innerText = '00 TK';
       couponInput.value = '';
       initialTotalPrice = 0;
+      applyBtn.setAttribute('disabled', true);
+      purchaseBtn.setAttribute('disabled', true);
 }
