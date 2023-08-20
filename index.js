@@ -37,8 +37,11 @@ function addCardToLog(target) {
 // apply coupon function
 function applyCoupon() {
       const couponInput = document.getElementById('coupon-input').value;
+      const couponInputElement = document.getElementById('coupon-input');
       if(couponInput !== 'SELL200' || couponInput === '') {
-            return alert('Invalid coupon');
+            alert('Invalid coupon');
+            couponInputElement.value = '';
+            return;
       }
       const discountElement = document.getElementById('discount-price'),
             totalPrice = parseFloat(document.getElementById('total-price').innerText),
@@ -49,6 +52,7 @@ function applyCoupon() {
             // set updated price after discount
       const updatedPrice = totalPrice - discountPrice;
       priceAfterDiscountElement.innerHTML = `${updatedPrice} TK`;
+      couponInputElement.value = '';
 }
 
 // reset everything to home
@@ -56,9 +60,11 @@ function resetEverything() {
       const listItems = document.getElementById('list-item'),
             totalPrice = document.getElementById('total-price'),
             discountPrice = document.getElementById('discount-price'),
-            priceAfterDiscount = document.getElementById('total');
+            priceAfterDiscount = document.getElementById('total'),
+            couponInput = document.getElementById('coupon-input');
       listItems.innerHTML = '';
       totalPrice.innerText = '00 TK';
       discountPrice.innerText = '00 TK';
       priceAfterDiscount.innerText = '00 TK';
+      couponInput.value = '';
 }
