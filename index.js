@@ -4,13 +4,15 @@ function setElement(containerId, title) {
     const p = document.createElement('p'),
           container = document.getElementById(containerId),
           count = document.getElementById('list-item').childElementCount;
-    p.innerHTML = `${count}. ${title}`;
+    p.innerHTML = `${count + 1}. ${title}`;
     p.className = 'mb-2';
     container.appendChild(p);
 }
 
 
 // reusable function ends
+
+// add items to the log
 let initialTotalPrice = 0;
 function addCardToLog(target) {
     const title = target.childNodes[1].childNodes[5].childNodes[1].innerText,
@@ -47,4 +49,16 @@ function applyCoupon() {
             // set updated price after discount
       const updatedPrice = totalPrice - discountPrice;
       priceAfterDiscountElement.innerHTML = `${updatedPrice} TK`;
+}
+
+// reset everything to home
+function resetEverything() {
+      const listItems = document.getElementById('list-item'),
+            totalPrice = document.getElementById('total-price'),
+            discountPrice = document.getElementById('discount-price'),
+            priceAfterDiscount = document.getElementById('total');
+      listItems.innerHTML = '';
+      totalPrice.innerText = '00 TK';
+      discountPrice.innerText = '00 TK';
+      priceAfterDiscount.innerText = '00 TK';
 }
