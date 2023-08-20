@@ -24,6 +24,7 @@ function addCardToLog(target) {
           
       initialTotalPrice = initialTotalPrice + value;
       totalPrice.innerHTML = `${initialTotalPrice.toFixed(2)} TK`;
+      console.log(initialTotalPrice);
       setElement('list-item', title);
       if(parseFloat(totalPrice.innerText) > 0) {
             purchaseBtn.removeAttribute('disabled');
@@ -67,4 +68,5 @@ function resetEverything() {
       discountPrice.innerText = '00 TK';
       priceAfterDiscount.innerText = '00 TK';
       couponInput.value = '';
+      initialTotalPrice = 0;
 }
