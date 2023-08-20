@@ -40,7 +40,11 @@ function applyCoupon() {
       }
       const discountElement = document.getElementById('discount-price'),
             totalPrice = parseFloat(document.getElementById('total-price').innerText),
-            // 20% discount on total price
+            priceAfterDiscountElement = document.getElementById('total'),
+            // 20% discount on price
             discountPrice = (totalPrice / 100) * 20;
-            discountElement.innerHTML = `${discountPrice.toFixed(2)} TK`
+            discountElement.innerHTML = `${discountPrice.toFixed(2)} TK`;
+            // set updated price after discount
+      const updatedPrice = totalPrice - discountPrice;
+      priceAfterDiscountElement.innerHTML = `${updatedPrice} TK`;
 }
